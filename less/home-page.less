@@ -1,0 +1,126 @@
+body {
+    background-color: @about-us-page-color;
+}
+
+.top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25%;
+    line-height: 1.5;
+    color: @top-font-color;
+    // font-weight: bold;
+    background-image: url(../img/Hero1.jpg);
+    @media @mobile {
+        line-height: 1.2;
+        padding: 5%;
+        text-align: center;
+    }//end top content mobile
+}//end top-content
+
+.top-content-ab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25%;
+    line-height: 1.5;
+    color: @top-font-color-ab;
+    font-weight: bold;
+    background-image: url(../img/Hero2.jpg);
+    @media @mobile {
+        line-height: 1.2;
+        padding: 5%;
+        text-align: center;
+    }//end top content mobile
+}//end top-content
+
+.main-title {
+    text-align: center;
+    padding: 5%;
+}//end main title
+
+.main-content {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    padding: 2%;
+    .text-content {
+        padding: 2%;
+    }//end content sections
+    .img-content {
+        width: 100vw;
+        @media @mobile {
+            width: 100%;
+        }//end main mobile imgs
+    }//end img in content section
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+    }//end main mobile
+}//end main content
+
+.main-content-r {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    padding: 2%;
+    .text-content {
+        padding: 2%;
+    }//end content sections
+    .img-content {
+        width: 100vw;
+        @media @mobile {
+            width: 100%;
+        }//end reverse img mobile
+    }//end img in content section
+    @media @mobile {
+        display: flex;
+        flex-direction: column-reverse;
+    }//end reverse mobile
+}//end main content REVERSE
+
+ul {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    list-style: square;
+    padding: 5%;
+}
+
+hr {
+    width: 80%;
+    border: 1px dashed black;
+}
+
+form {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2%;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: 1px solid @header-nav-color;
+    background-color: rgb(243, 166, 166);
+    width: 25%;
+    .sign-up-btn {
+        width: 35%;
+        padding: 1%;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-size: 1.6rem;
+        font-weight: bold;
+        background-color: @button-color;
+        color: @button-font;
+        &:hover {
+            background-color: @button-font;
+            color: @button-color;
+        }//end button hover
+    }//end form button
+    @media @mobile {
+        width: 95%;
+    }//end mobile form
+}//end form
+
+footer {
+    text-align: center;
+    padding: 10% 0% 0% 0%;
+}//end footer
