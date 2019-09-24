@@ -15,6 +15,7 @@ body {
         line-height: 1.2;
         padding: 5%;
         text-align: center;
+        color: @top-font-color-ab;
     }//end top content mobile
 }//end top-content
 
@@ -31,6 +32,7 @@ body {
         line-height: 1.2;
         padding: 5%;
         text-align: center;
+        color: @top-font-color;
     }//end top content mobile
 }//end top-content
 
@@ -95,16 +97,17 @@ form {
     text-align: center;
     margin: 0 auto;
     padding: 2%;
-    line-height: 1.5;
+    line-height: 2;
     font-size: 1.6rem;
-    font-weight: bold;
+    color: white;
     border: 1px solid @header-nav-color;
-    background-color: rgb(243, 166, 166);
-    width: 25%;
+    // background-color: rgb(243, 166, 166);
+    background-image: url(../img/formpic2.jpg);
+    width: 95%;
     .sign-up-btn {
-        width: 35%;
+        width: 15%;
         padding: 1%;
-        border-radius: 5px;
+        border-radius: 4px;
         border: 1px solid black;
         font-size: 1.6rem;
         font-weight: bold;
@@ -114,9 +117,13 @@ form {
             background-color: @button-font;
             color: @button-color;
         }//end button hover
+        @media @mobile {
+            width: 50%;
+            padding: 2%;
+        }//end mobile button
     }//end form button
     @media @mobile {
-        width: 95%;
+        width: 76%;
     }//end mobile form
 }//end form
 
