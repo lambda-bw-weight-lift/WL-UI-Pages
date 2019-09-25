@@ -256,9 +256,29 @@ body {
     line-height: 1.2;
     padding: 5%;
     text-align: center;
-    color: #EB8200;
+    color: #bfc4ff;
     font-weight: bold;
     background-image: url(../img/Hero3.jpg);
+  }
+}
+.top-content button {
+  width: 150px;
+  border-radius: 4px;
+  border: 1px solid black;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 5%;
+  background-color: #EB8200;
+  color: white;
+}
+.top-content button:hover {
+  background-color: white;
+  color: #EB8200;
+}
+@media (max-width: 500px) {
+  .top-content button {
+    width: 125px;
+    padding: 5%;
   }
 }
 .top-content-ab {
@@ -276,7 +296,7 @@ body {
     line-height: 1.2;
     padding: 5%;
     text-align: center;
-    color: #EB8200;
+    color: #bfc4ff;
     font-weight: bold;
   }
 }
@@ -343,42 +363,6 @@ ul {
 hr {
   width: 80%;
   border: 1px dashed black;
-}
-form {
-  text-align: center;
-  margin: 0 auto;
-  padding: 2%;
-  line-height: 2;
-  font-size: 1.6rem;
-  color: white;
-  border: 1px solid #0069EB;
-  background-image: url(../img/formpic2.jpg);
-  width: 95%;
-}
-form .sign-up-btn {
-  width: 15%;
-  padding: 1%;
-  border-radius: 4px;
-  border: 1px solid black;
-  font-size: 1.6rem;
-  font-weight: bold;
-  background-color: #EB8200;
-  color: white;
-}
-form .sign-up-btn:hover {
-  background-color: white;
-  color: #EB8200;
-}
-@media (max-width: 500px) {
-  form .sign-up-btn {
-    width: 50%;
-    padding: 2%;
-  }
-}
-@media (max-width: 500px) {
-  form {
-    width: 76%;
-  }
 }
 footer {
   text-align: center;
