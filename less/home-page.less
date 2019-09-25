@@ -15,10 +15,28 @@ body {
         line-height: 1.2;
         padding: 5%;
         text-align: center;
-        color: @button-color;
+        color: @top-font-color;
         font-weight: bold;
         background-image: url(../img/Hero3.jpg);
     }//end top content mobile
+    button {
+        width: 150px;
+        border-radius: 4px;
+        border: 1px solid black;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 5%;
+        background-color: @button-color;
+        color: @button-font;
+        &:hover {
+            background-color: @button-font;
+            color: @button-color;
+        }//end button hover
+        @media @mobile {
+            width: 125px;
+            padding: 5%;
+        }//end mobile button
+    }//end button
 }//end top-content
 
 .top-content-ab {
@@ -34,7 +52,7 @@ body {
         line-height: 1.2;
         padding: 5%;
         text-align: center;
-        color: @button-color;
+        color: @top-font-color;
         font-weight: bold;
     }//end top content mobile
 }//end top-content
@@ -99,40 +117,6 @@ hr {
     width: 80%;
     border: 1px dashed black;
 }
-
-form {
-    text-align: center;
-    margin: 0 auto;
-    padding: 2%;
-    line-height: 2;
-    font-size: 1.6rem;
-    color: white;
-    border: 1px solid @header-nav-color;
-    // background-color: rgb(243, 166, 166);
-    background-image: url(../img/formpic2.jpg);
-    width: 95%;
-    .sign-up-btn {
-        width: 15%;
-        padding: 1%;
-        border-radius: 4px;
-        border: 1px solid black;
-        font-size: 1.6rem;
-        font-weight: bold;
-        background-color: @button-color;
-        color: @button-font;
-        &:hover {
-            background-color: @button-font;
-            color: @button-color;
-        }//end button hover
-        @media @mobile {
-            width: 50%;
-            padding: 2%;
-        }//end mobile button
-    }//end form button
-    @media @mobile {
-        width: 76%;
-    }//end mobile form
-}//end form
 
 footer {
     text-align: center;
